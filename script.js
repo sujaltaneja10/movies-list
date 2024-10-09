@@ -34,13 +34,9 @@ movies.forEach((element) => {
 
     const ratingValue = element.rating/ 2;
 
-    document.querySelectorAll('.star-div').forEach((star, i) => {
+    ratingDiv.querySelectorAll('.star-div').forEach((star, i) => {
         if (ratingValue >= i + 1)
             star.classList.add('full-star');
-    })
-
-    document.querySelectorAll('.star-div').forEach((star) => {
-        star.classList.toggle('star-div');
     })
 
     section.appendChild(ratingDiv);
